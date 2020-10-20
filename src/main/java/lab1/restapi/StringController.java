@@ -11,4 +11,12 @@ public class StringController {
 		return stringToRevert;
 	}
 
+	public String revertString(String stringToRevert){
+		StringBuilder revertedString = new StringBuilder();
+		for (int letterIndex = stringToRevert.length() - 1; letterIndex >= 0 ; letterIndex--) {
+			revertedString.append(stringToRevert.charAt(letterIndex));
+		}
+		return revertedString.toString();
+	}
+
 }
